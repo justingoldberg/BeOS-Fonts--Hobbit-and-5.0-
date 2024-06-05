@@ -1,0 +1,20 @@
+# Makefile for fonts
+# early prototype, 2000-06-19, jbq
+
+SRC_DIR:=fonts
+
+SOURCE:=ttfonts
+
+MY_INSTALL_DIR:=$(INSTALL_B_BEOS_FONTS_DIRECTORY)/ttfonts
+
+PERMISSIONS:=$(PERMS_SYSTEM_DATA)
+include $(SDIR_TEMPLATES)/DataDirTemplate.mk
+
+SRC_DIR:=fonts
+
+SOURCE:=ffsfonts
+
+MY_INSTALL_DIR:=$(INSTALL_B_BEOS_FONTS_DIRECTORY)/ffsfonts
+
+PERMISSIONS:=$(PERMS_SYSTEM_DATA)
+include $(SDIR_TEMPLATES)/DataDirTemplate.mk
